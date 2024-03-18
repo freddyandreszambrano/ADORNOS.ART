@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adornos.Art</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <div class="nav container">
+            <a href="" class="logo">Adornos.Art</a>
+            <div>
+                <i class='bx bx-cart-alt' id="icono"></i>
+                <div class="count-productos">
+                    <span id="cantidad-productos">0</span>
+                </div>
+            </div>
+            <!-- carrito de compras -->
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <!-- contenido del menu carrito -->
+                <div class="cart-conten">   
+                </div>
+                <!-- arrow - flecha(indicativa) -->
+                <div class="arrow">
+                    <i class='bx bxs-chevron-down' id="arrow-flecha"></i>
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-prince">$ 0</div>
+                </div>
+               
+                <!-- Buy BUTTOM -->
+                <a onclick= "carrito.enviarMensaje()">
+                    <buttom type="buttom" class="btn">
+                        <i class='bx bxl-whatsapp'></i>
+                      !Comprar!
+                    </buttom>
+                </a>
+                <!-- cerrar carrito(icono) -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--shop-->
+    <section class="shop container" id="contenido">
+        <h2 class="section-title">Shop Productos</h2>
+        <!-- contenido -->
+        <div class="contenid-shop">
+             <!-- box 1 -->
+            <div class="producto-box">
+                <a href="/Pages/renos.html">
+                    <img src="https://www.shutterstock.com/image-vector/reindeer-decorative-christmas-lightcute-holiday-260nw-1539889829.jpg" alt="" class="producto-img">
+                </a>
+                <h2 class="titulo-producto">articulo 1</h2>
+                <span class="precio">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                <button class="preview" >VISTA PREVIA</button>
+                
+            </div>
+            <!-- box 2 -->
+            <div class="producto-box">
+                <a href="/Pages/Estrella.html">
+                    <img src="https://img.freepik.com/psd-premium/estrella-navidad-3d-icono_92753-4118.jpg" alt="" class="producto-img">
+                </a>
+                <h2 class="titulo-producto">articulo 2</h2>
+                <span class="precio">$30</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                <button class="preview" >VISTA PREVIA</button>
+            </div>
+             <!-- box 3 -->
+             <div class="producto-box">
+                <img src="https://i.pinimg.com/originals/67/b8/44/67b84436730c8029ccd4021c32a4bdff.jpg" alt="" class="producto-img">
+                <h2 class="titulo-producto">articulo 3</h2>
+                <span class="precio">$20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 4 -->
+             <div class="producto-box">
+                <img src="https://img.freepik.com/vector-premium/clipart-color-dibujos-animados-renos-navidad_576561-3924.jpg?w=2000" alt="" class="producto-img">
+                <h2 class="titulo-producto">articulo 4</h2>
+                <span class="precio">$5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 5 -->
+             <div class="producto-box">
+                <img src="https://static.guiainfantil.com/media/36766/c/la-verdadera-historia-de-papa-noel-md.jpg" alt="" class="producto-img">
+                <h2 class="titulo-producto">articulo 5</h2>
+                <span class="precio">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 6 -->
+             <div class="producto-box">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/604/918/original/cartoon-santa-claus-carrying-sack-free-vector.jpg" alt="" class="producto-img">
+                <h2 class="titulo-producto">articulo 6</h2>
+                <span class="precio">$12</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 7 -->
+             <div class="producto-box">
+                <img src="https://static.vecteezy.com/system/resources/previews/011/288/230/original/christmas-cute-reindeer-cartoon-png.png" alt="" class="producto-img">
+                <h2 class="titulo-producto">articulo 7</h2>
+                <span class="precio">$10</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- box 8 -->
+             <div class="producto-box">
+                <img src="https://thumbs.dreamstime.com/z/caricatura-graciosa-reno-navide%C3%B1o-saltando-sobre-fondo-blanco-ilustraci%C3%B3n-vectorial-de-dibujos-animados-graciosos-renos-236499435.jpg" alt="" class="producto-img">
+                <h2 class="titulo-producto">articulo 8</h2>
+                <span class="precio">$15</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <footer class="pie_pagina">
+        <div class="grupo_1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <i class='bx bxs-leaf'></i>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>figuras navidenas realizadas por industria ecuatoriana con manos naranjalenas</p>
+            </div>
+            <div class="box">
+               <h2>SIGUENOS</h2>
+               <div class="red_social">
+                <a href="" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""  class="instagram"><i class='bx bxl-instagram'></i></a>
+                <a href=""  class="whastapp"><i class='bx bxl-whatsapp'></i></a>
+               </div>
+            </div>
+        </div>
+        <div class="grupo_2">
+            <small>&copy; 2023 <b>Slee Dw</b> - Todos Los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!-- link to js  -->
+    <script src="/js/main.js"></script>
+
+
+
+</body>
+<!-- libreria sweetalert2. -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>
+

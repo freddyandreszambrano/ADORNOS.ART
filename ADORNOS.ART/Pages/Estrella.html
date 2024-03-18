@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adornos.Art</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/Preview.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <div class="nav container">
+            <a href="" class="logo">Adornos.Art</a>
+            <div>
+                <i class='bx bx-cart-alt' id="icono"></i>
+                <div class="count-productos">
+                    <span id="cantidad-productos">0</span>
+                </div>
+            </div>
+            <!-- carrito de compras -->
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <!-- contenido del menu carrito -->
+                <div class="cart-conten">   
+                </div>
+                <!-- arrow - flecha(indicativa) -->
+                <div class="arrow">
+                    <i class='bx bxs-chevron-down' id="arrow-flecha"></i>
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-prince">$ 0</div>
+                </div>
+               
+                <!-- Buy BUTTOM -->
+                <a onclick= "carrito.enviarMensaje()">
+                    <buttom type="buttom" class="btn">
+                        <i class='bx bxl-whatsapp'></i>
+                      !Comprar!
+                    </buttom>
+                </a>
+                <!-- cerrar carrito(icono) -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--shop-->
+    <section class="shop container" id="contenido">
+        <h2 class="section-title">Shop Productos</h2>
+        <!-- contenido -->
+        
+        <div class="contenid-shop">
+             <!-- box 1 -->
+            <div class="producto-box">
+                <img src="https://www.shutterstock.com/image-vector/reindeer-decorative-christmas-lightcute-holiday-260nw-1539889829.jpg" alt="" class="producto-img">
+                <button><a href="index.html">
+                    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+                    <span>REGRESAR</span>
+                </a></button>
+                <h2 class="titulo-producto">articulo 1</h2>
+                <h3>Codigo: 923854</h3>
+                <input id="toggle-heart" type="checkbox"><label for="toggle-heart" aria-label="like">❤</label>            
+                <span class="precio">$25</span>
+                <i class='bx bx-shopping-bag add-cart'> AGREGAR AL CARRITO</i>
+            </div>
+        </div>
+        <div class="rating">
+            <input value="5" name="rate" id="star5" type="radio">
+            <label title="text" for="star5"></label>
+            <input value="4" name="rate" id="star4" type="radio">
+            <label title="text" for="star4"></label>
+            <input value="3" name="rate" id="star3" type="radio" checked="">
+            <label title="text" for="star3"></label>
+            <input value="2" name="rate" id="star2" type="radio">
+            <label title="text" for="star2"></label>
+            <input value="1" name="rate" id="star1" type="radio">
+            <label title="text" for="star1"></label>
+        </div>
+        <div class="section_acordion">
+            <div class="acordion">
+                <div class="title-acordion">
+                    <h3>DETALLES DEL PRODUCTO</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path
+                            d="M3 3L21 21L39 3"
+                            stroke="white" 
+                            stroke-width="7" 
+                            stroke-linecap="round"
+                        />            
+                    </svg>
+                </div>
+                <div class="descripcion">
+                    <p>
+                        MATERIAL:
+                        COLORES DISPONIBLES:
+                        MADE-IN NARANJAL:...
+    
+                    </p>
+                </div>
+            </div>
+            <div class="acordion">
+                <div class="title-acordion">
+                    <h3>RESEÑAS</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path
+                            d="M3 3L21 21L39 3"
+                            stroke="white" 
+                            stroke-width="7" 
+                            stroke-linecap="round"
+                        />            
+                    </svg>
+                </div>
+                <div class="descripcion">
+                    <p>
+                       no hay reseñas disponibles...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pie de pagina -->
+    <footer class="pie_pagina">
+        <div class="grupo_1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <i class='bx bxs-leaf'></i>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>figuras navidenas realizadas por industria ecuatoriana con manos naranjalenas</p>
+            </div>
+            <div class="box">
+               <h2>SIGUENOS</h2>
+               <div class="red_social">
+                <a href="" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""  class="instagram"><i class='bx bxl-instagram'></i></a>
+                <a href=""  class="whastapp"><i class='bx bxl-whatsapp'></i></a>
+               </div>
+            </div>
+        </div>
+        <div class="grupo_2">
+            <small>&copy; 2023 <b>Slee Dw</b> - Todos Los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!-- link to js  -->
+    <script src="/js/main.js"></script>
+    <script src="/js/Accordion.js"></script>
+    <!-- libreria sweetalert2. -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
+
+
